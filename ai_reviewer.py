@@ -21,7 +21,7 @@ def get_staged_changes():
 def review_code(diff_text):
     """Llama 3.1 ko strict senior dev banakar code check karwana"""
     if not diff_text.strip():
-        return True # Koi change nahi hai toh pass kardo
+        return "PASS"
 
     system_prompt = """
     You are an elite, extremely strict Senior Software Engineer. 
